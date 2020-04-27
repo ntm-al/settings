@@ -90,3 +90,9 @@ max_line_length = 100
 max_line_length = off
 trim_trailing_whitespace = false
 ```
+
+## TODO
+
+- [ ] Adding eslint file in js project
+- [ ] Adding prettier file in js project
+- [ ] Adding integration eslint prettier and editorconfig
