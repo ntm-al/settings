@@ -96,3 +96,4 @@ trim_trailing_whitespace = false
 - [ ] Adding eslint file in js project
 - [ ] Adding prettier file in js project
 - [ ] Adding integration eslint prettier and editorconfig
+- [ ] Adding vscode settings.json
