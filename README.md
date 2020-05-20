@@ -101,7 +101,7 @@ trim_trailing_whitespace = false
 - You should install the necessary dependencies:
 
 ```shell
-$ npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+$ npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin @typescript-eslint/eslint-plugin-tslint
 ```
 
 - Migrating the rules from tslint to eslint, there is a lib for that:
@@ -111,8 +111,7 @@ $ npx tslint-to-eslint-config
 ```
 
 - This command will generate a `.eslintrc.js` file, you should:
-  > delete the property `parserOptions.project`
-  > delete the property `"@typescript-eslint/tslint/config"`
+  > - check the generated log file `tslint-to-eslint-config.log`, and delete the presented rules (because they are not yet compatible)
 - Configure command `lint` in scripts of `package.json`:
   > `"lint": "eslint -c .eslintrc.js --ext .ts <mySrcFolder>"`
 - Remove `tslint.json` pf projetc
@@ -120,6 +119,10 @@ $ npx tslint-to-eslint-config
 #### 2. prettier
 
 - First make sure that prettier is configured in your vscode - [prettier in vscode](https://github.com/prettier/prettier-vscode)
+- Install:
+   ```sh
+      $ npm i --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+   ```
 - Create a `.prettierrc` file at the root of the project
 - Inside it add the rules:
 
