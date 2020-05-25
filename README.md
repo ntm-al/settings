@@ -111,6 +111,7 @@ $ npx tslint-to-eslint-config
 ```
 
 - This command will generate a `.eslintrc.js` file, you should:
+  > - add property `tsconfigRootDir: __dirname` inside of `parserOptions`
   > - check the generated log file `tslint-to-eslint-config.log`, and delete the presented rules (because they are not yet compatible)
 - Configure command `lint` in scripts of `package.json`:
   > `"lint": "eslint -c .eslintrc.js --ext .ts <mySrcFolder>"`
