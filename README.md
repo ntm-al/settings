@@ -121,9 +121,9 @@ $ npx tslint-to-eslint-config
 
 - First make sure that prettier is configured in your vscode - [prettier in vscode](https://github.com/prettier/prettier-vscode)
 - Install:
-   ```sh
-      $ npm i --save-dev prettier eslint-config-prettier eslint-plugin-prettier
-   ```
+  ```sh
+     $ npm i --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+  ```
 - Create a `.prettierrc` file at the root of the project
 - Inside it add the rules:
 
@@ -140,8 +140,8 @@ $ npx tslint-to-eslint-config
 
 ## TODO
 
-- [ ] Adding eslint file in js project
-- [ ] Adding prettier file in js project
-- [ ] Adding integration eslint prettier and editorconfig
 - [ ] Adding vscode settings.json
-- [ ] Configure eslint and prettier in angular project
+- [x] Adding eslint file in js project
+- [x] Adding prettier file in js project
+- [x] Adding integration eslint prettier and editorconfig
+- [x] Configure eslint and prettier in angular project
